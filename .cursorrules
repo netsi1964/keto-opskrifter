@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {
+      "pattern": "*.md",
+      "language": "markdown"
+    },
+    {
+      "pattern": "*.html",
+      "language": "html"
+    },
+    {
+      "pattern": "*.css",
+      "language": "css"
+    }
+  ]
+} 
