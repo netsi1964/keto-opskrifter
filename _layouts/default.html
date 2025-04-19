@@ -7,15 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
-<body class="bg-gray-50 min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col">
     <!-- Navigation -->
-    <nav class="bg-green-600 text-white shadow-lg">
+    <nav class="nav-custom text-white shadow-lg">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <a href="{{ site.baseurl }}/" class="text-2xl font-bold">{{ site.title }}</a>
+                <a href="{{ site.baseurl }}/" class="text-2xl">{{ site.title }}</a>
                 <div class="space-x-4">
-                    <a href="{{ site.baseurl }}/" class="hover:text-green-200">Forside</a>
-                    <a href="{{ site.baseurl }}/#opskrifter" class="hover:text-green-200">Opskrifter</a>
+                    <a href="{{ site.baseurl }}/" class="hover:text-orange-200">Forside</a>
+                    <a href="{{ site.baseurl }}/#opskrifter" class="hover:text-orange-200">Opskrifter</a>
                 </div>
             </div>
         </div>
@@ -24,9 +24,9 @@
     {{ content }}
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="footer-custom py-6 mt-auto">
         <div class="container mx-auto px-4 text-center">
-            <p>Lavet med ♥ af <a href="https://twitter.com/netsi1964" class="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">Sten Hougaard</a></p>
+            <p>Lavet med ♥ af <a href="https://twitter.com/netsi1964" class="text-orange-200 hover:text-white" target="_blank" rel="noopener noreferrer">Sten Hougaard</a></p>
         </div>
     </footer>
 </body>
