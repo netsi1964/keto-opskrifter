@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-green-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="{{ site.baseurl }}/" class="text-2xl font-bold">{{ site.title }}</a>
+                <div class="space-x-4">
+                    <a href="{{ site.baseurl }}/" class="hover:text-green-200">Forside</a>
+                    <a href="{{ site.baseurl }}/#opskrifter" class="hover:text-green-200">Opskrifter</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    {{ content }}
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>Lavet med ♥ af <a href="https://twitter.com/netsi1964" class="text-green-400 hover:text-green-300" target="_blank" rel="noopener noreferrer">Sten Hougaard</a></p>
+        </div>
+    </footer>
+</body>
+</html> 

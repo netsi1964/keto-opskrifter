@@ -10,42 +10,20 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Custom link underline animation */
-.hover-underline-animation {
-    position: relative;
+/* Prose styling for markdown content */
+.prose {
+    max-width: 65ch;
+    margin: 0 auto;
 }
 
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: currentColor;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-/* Markdown content styles */
-#recipe-container {
-    line-height: 1.6;
-}
-
-#recipe-container h1 {
+.prose h1 {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #1a202c;
 }
 
-#recipe-container h2 {
+.prose h2 {
     font-size: 1.875rem;
     font-weight: 600;
     margin-top: 2rem;
@@ -53,7 +31,7 @@ html {
     color: #2d3748;
 }
 
-#recipe-container h3 {
+.prose h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1.5rem;
@@ -61,34 +39,34 @@ html {
     color: #4a5568;
 }
 
-#recipe-container p {
+.prose p {
     margin-bottom: 1rem;
     color: #4a5568;
 }
 
-#recipe-container ul, #recipe-container ol {
+.prose ul, .prose ol {
     margin-bottom: 1rem;
     margin-left: 1.5rem;
 }
 
-#recipe-container ul {
+.prose ul {
     list-style-type: disc;
 }
 
-#recipe-container ol {
+.prose ol {
     list-style-type: decimal;
 }
 
-#recipe-container li {
+.prose li {
     margin-bottom: 0.5rem;
     color: #4a5568;
 }
 
-#recipe-container a {
+.prose a {
     color: #48bb78;
     text-decoration: underline;
 }
 
-#recipe-container a:hover {
+.prose a:hover {
     color: #38a169;
 } 

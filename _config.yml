@@ -1,0 +1,22 @@
+title: Keto Opskrifter
+description: En samling af lækre keto-venlige opskrifter
+baseurl: "/keto-opskrifter"
+url: "https://netsi1964.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Collections
+collections:
+  opskrifter:
+    output: true
+    permalink: /opskrifter/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "opskrifter"
+    values:
+      layout: "recipe" 
