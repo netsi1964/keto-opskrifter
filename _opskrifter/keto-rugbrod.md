@@ -1,6 +1,7 @@
 ---
 title: Keto Rugbrød
 description: Et lækkert og saftigt keto-venligt rugbrød der smager præcis som det ægte rugbrød.
+image: /assets/img/KETO-RUGBRØD.jpg
 ---
 
 > Denne opskrift er inspireret af [det originale keto rugbrød fra Ketomums.dk](https://ketomums.dk/keto-frokost/det-absolut-bedste-keto-rugbroed-smager-fuldstaendig-som-alm-rugbroed/).
