@@ -16,6 +16,11 @@ collections:
     output: true
     permalink: /opskrifter/:name/
 
+# Include assets and images
+include:
+  - assets
+  - assets/images
+
 defaults:
   - scope:
       path: ""

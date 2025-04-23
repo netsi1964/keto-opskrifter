@@ -28,6 +28,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: Create build directory
+        run: |
+          mkdir -p _site/assets/images
+          cp -r assets/images/* _site/assets/images/ || true
       - name: Build with Jekyll
         run: bundle exec jekyll build
         env:
