@@ -3,7 +3,7 @@ name: keto-kaffe-med-aeggeskaller.md
 title: Gør din kaffe blødere med æggeskaller – perfekt til keto!
 description: Lær hvordan du kan bruge rene æggeskaller til at reducere syrligheden i din kaffe og få en blødere smag – en smart måde at udnytte alle dele af ægget på keto.
 date: 2025-04-27
-image: /assets/images/kaffe-aeggeskaller.jpeg
+image: /assets/images/E1BDCBD5-BB4D-4C31-B1CD-AB55829E1FFC.png
 published: true
 ---
 
