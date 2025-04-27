@@ -2,7 +2,7 @@
 title: Lav dit eget keto-venlige mel
 description: Lær at lave dine egne sunde melalternativer med kerner og nødder - perfekt til keto og low-carb bagning.
 date: 2024-03-28
-image: /assets/images/keto-mel-alternativer.jpg
+image: /assets/images/lav-selv-mel.jpeg
 published: true
 ---
 
