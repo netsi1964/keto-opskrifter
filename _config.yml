@@ -1,7 +1,7 @@
 title: Keto Opskrifter
-description: En samling af lækre keto-venlige opskrifter
-baseurl: "/keto-opskrifter"
-url: "https://netsi1964.github.io"
+description: Lækre og sunde keto-venlige opskrifter
+baseurl: ""
+url: ""
 
 # Build settings
 markdown: kramdown
@@ -9,12 +9,16 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Collections
 collections:
   opskrifter:
     output: true
-    permalink: /opskrifter/:name/
+    permalink: /opskrifter/:name
+  blog:
+    output: true
+    permalink: /blog/:name
 
 # Include assets and images
 include:
@@ -27,6 +31,15 @@ defaults:
       type: "opskrifter"
     values:
       layout: "recipe"
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # GitHub Pages specific settings
 github: [metadata]
@@ -45,4 +58,14 @@ gist:
   noscript: false
 kramdown:
   math_engine: mathjax
-  syntax_highlighter: rouge 
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md 
