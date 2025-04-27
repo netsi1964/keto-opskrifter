@@ -1,7 +1,7 @@
 title: Keto Opskrifter
 description: Lækre og sunde keto-venlige opskrifter
-baseurl: ""
-url: ""
+baseurl: "/keto-opskrifter"
+url: "https://netsi1964.github.io"
 
 # Build settings
 markdown: kramdown
