@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.title }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                maxWidth: 'none',
+                                h1: {
+                                    fontWeight: '800',
+                                    fontSize: '2.25em',
+                                    marginTop: '0',
+                                    marginBottom: '0.8888889em',
+                                    lineHeight: '1.1111111'
+                                },
+                                h2: {
+                                    fontWeight: '700',
+                                    fontSize: '1.5em',
+                                    marginTop: '2em',
+                                    marginBottom: '1em',
+                                    lineHeight: '1.3333333'
+                                },
+                                h3: {
+                                    fontWeight: '600',
+                                    fontSize: '1.25em',
+                                    marginTop: '1.6em',
+                                    marginBottom: '0.6em',
+                                    lineHeight: '1.6'
+                                },
+                                table: {
+                                    fontSize: '0.875em',
+                                    lineHeight: '1.7142857',
+                                    marginTop: '2em',
+                                    marginBottom: '2em',
+                                    borderWidth: '1px',
+                                    width: '100%'
+                                },
+                                thead: {
+                                    borderBottomWidth: '1px',
+                                    borderBottomColor: 'inherit'
+                                },
+                                'thead th': {
+                                    fontWeight: '600',
+                                    verticalAlign: 'bottom',
+                                    paddingRight: '0.5714286em',
+                                    paddingBottom: '0.5714286em',
+                                    paddingLeft: '0.5714286em'
+                                },
+                                'tbody td': {
+                                    paddingTop: '0.5714286em',
+                                    paddingRight: '0.5714286em',
+                                    paddingBottom: '0.5714286em',
+                                    paddingLeft: '0.5714286em'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <style>
         .header-custom {
             background-color: #4a5568;
@@ -33,7 +95,9 @@
         </div>
     </nav>
 
-    {{ content }}
+    <main class="prose prose-lg max-w-none">
+        {{ content }}
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 mt-auto">
