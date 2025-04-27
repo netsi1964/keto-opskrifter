@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <style>
+        .header-custom {
+            background-color: #4a5568;
+            background-image: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        }
+        .card-custom {
+            transition: transform 0.2s ease-in-out;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col bg-gray-50">
     <!-- Navigation -->
-    <nav class="nav-custom text-white shadow-lg">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <a href="{{ site.baseurl }}/" class="text-2xl">{{ site.title }}</a>
-                <div class="space-x-4">
-                    <a href="{{ site.baseurl }}/" class="hover:text-orange-200">Forside</a>
-                    <a href="{{ site.baseurl }}/#opskrifter" class="hover:text-orange-200">Opskrifter</a>
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="{{ site.baseurl }}/" class="text-xl font-bold text-gray-800">{{ site.title }}</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="{{ site.baseurl }}/" class="text-gray-600 hover:text-gray-800">Hjem</a>
+                    <a href="{{ site.baseurl }}/#opskrifter" class="text-gray-600 hover:text-gray-800">Opskrifter</a>
+                    <a href="{{ site.baseurl }}/#blog" class="text-gray-600 hover:text-gray-800">Blog</a>
                 </div>
             </div>
         </div>
@@ -24,9 +36,18 @@
     {{ content }}
 
     <!-- Footer -->
-    <footer class="footer-custom py-6 mt-auto">
-        <div class="container mx-auto px-4 text-center">
-            <p>Lavet med ♥ af <a href="https://twitter.com/netsi1964" class="text-orange-200 hover:text-white" target="_blank" rel="noopener noreferrer">Sten Hougaard</a></p>
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Alle rettigheder forbeholdes.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="{{ site.baseurl }}/" class="hover:text-gray-300">Hjem</a>
+                    <a href="{{ site.baseurl }}/#opskrifter" class="hover:text-gray-300">Opskrifter</a>
+                    <a href="{{ site.baseurl }}/#blog" class="hover:text-gray-300">Blog</a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
