@@ -1,7 +1,7 @@
 ---
 title: Keto Franskbrød med Kerner
 description: Et luftigt og saftigt keto-venligt franskbrød bagt i form, lavet på mandelmel, solsikkekerner, græskarkerner og hørfrø.
-image: /assets/images/IMG_3516.jpeg
+image: /assets/images/05A534F4-86EC-457D-91D3-296824EA7782.png
 ---
 
 > Denne opskrift er inspireret af [keto bollerne fra Ketoliv.dk](https://ketoliv.dk/laekre-keto-boller/), tilpasset som franskbrød bagt i form.
