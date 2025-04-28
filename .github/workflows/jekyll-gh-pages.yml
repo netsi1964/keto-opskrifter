@@ -39,7 +39,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true
+          bundler-cache: false
+          
+      - name: Bundle Install
+        run: |
+          bundle config set --local deployment 'false'
+          bundle install
           
       - name: Build site
         run: bundle exec jekyll build
