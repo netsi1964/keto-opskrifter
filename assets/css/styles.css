@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --color-primary: #D35400;    /* Dyb orange */
-    --color-secondary: #E67E22;  /* Lys orange */
-    --color-accent: #8B4513;     /* Saddle brown */
-    --color-background: #FDF5E6; /* Old lace */
-    --color-text: #5D4037;      /* Brun grå */
+    --color-primary: #FF5722;    /* Dyb orange */
+    --color-secondary: #FF7043;  /* Lys orange */
+    --color-accent: #F4511E;     /* Mørk orange */
+    --color-background: #FBE9E7; /* Meget lys orange */
+    --color-text: #424242;      /* Mørk grå */
 }
 
 body {
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     background-color: var(--color-background);
     color: var(--color-text);
 }
@@ -148,19 +148,19 @@ a:hover {
 .prose {
     max-width: 65ch;
     margin: 0 auto;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .prose h1 {
     font-size: 2.25rem;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--color-primary);
     margin-bottom: 1rem;
 }
 
 .prose h2 {
     font-size: 1.875rem;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--color-accent);
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -168,7 +168,7 @@ a:hover {
 
 .prose h3 {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--color-secondary);
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
