@@ -1,7 +1,7 @@
 ---
 title: Velkommen til Keto Bloggen
 description: Lær om vores rejse med ketogen kost og få tips til at komme i gang med din egen keto-livsstil.
-date: 2024-03-27
+date: 2025-04-27
 image: /assets/images/keto-blog-welcome.jpg
 published: false
 ---
