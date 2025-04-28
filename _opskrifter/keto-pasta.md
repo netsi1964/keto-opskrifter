@@ -1,7 +1,7 @@
 ---
 title: Keto Pasta (frisk og frysbar)
 description: En velsmagende, lavkulhydrat pasta, som du kan lave selv – perfekt til keto. Kan nydes med det samme eller fryses ned.
-image: /assets/images/keto-pasta.png.PNG
+image: /assets/images/keto-pasta.png
 ---
 
 > Opskriften er udviklet til at fungere både som frisklavet og som frossen keto-pasta – uden brug af gluten, men stadig med god konsistens.

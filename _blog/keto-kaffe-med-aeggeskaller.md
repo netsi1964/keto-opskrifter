@@ -3,7 +3,7 @@ name: keto-kaffe-med-aeggeskaller.md
 title: Gør din kaffe blødere med æggeskaller – perfekt til keto!
 description: Lær hvordan du kan bruge rene æggeskaller til at reducere syrligheden i din kaffe og få en blødere smag – en smart måde at udnytte alle dele af ægget på keto.
 date: 2025-04-27
-image: /assets/images/E1BDCBD5-BB4D-4C31-B1CD-AB55829E1FFC.png
+image: /assets/images/genbrug-æggeskaller.png
 published: true
 ---
 
@@ -22,7 +22,7 @@ Når du lever på keto, bruger du sikkert mange æg – men vidste du, at du ogs
 
 Resultatet? En blødere, rundere smag, der især kan være en fordel på keto, hvor en skarp kaffe kan føles hård på en allerede omstillet mave.
 
-> Min vurdering: det er rigtigt at den lidt bitre eftersmag der kommer “bag i munden” er væk. Samtidigt ændrer det også smagen i en grad hvor det ikke rigtig smager af kaffe. Min far sagde at det smagte som opvarmet kaffe, og der har han ret i synes jeg: den er lidt flad i smagen. Men interessant forsøg. Vil jeg gøre det igen? Det tror jeg ikke, for jeg må erkende at det lidt bitre element i en kop kaffe simpelthen ER kaffe! :-)
+> Min vurdering: det er rigtigt at den lidt bitre eftersmag der kommer "bag i munden" er væk. Samtidigt ændrer det også smagen i en grad hvor det ikke rigtig smager af kaffe. Min far sagde at det smagte som opvarmet kaffe, og der har han ret i synes jeg: den er lidt flad i smagen. Men interessant forsøg. Vil jeg gøre det igen? Det tror jeg ikke, for jeg må erkende at det lidt bitre element i en kop kaffe simpelthen ER kaffe! :-)
 
 ## Hvorfor virker det?
 
