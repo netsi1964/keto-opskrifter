@@ -43,6 +43,12 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     overflow: hidden;
+    cursor: pointer;
+}
+
+/* Remove text decoration from card links */
+a:has(.card-custom) {
+    text-decoration: none;
 }
 
 .card-custom:hover {
@@ -92,9 +98,10 @@ html {
     text-decoration: none;
     font-weight: 400;
     transition: background-color 0.3s ease;
+    pointer-events: none; /* Prevents the button from capturing clicks */
 }
 
-.card-custom .button:hover {
+.card-custom:hover .button {
     background-color: var(--color-secondary);
     color: white !important;
 }

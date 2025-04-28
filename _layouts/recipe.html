@@ -68,20 +68,22 @@ layout: default
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% assign related_recipes = site.opskrifter | where_exp:"item", "item.url != page.url" | sample:3 %}
             {% for recipe in related_recipes %}
-            <div class="card-custom">
-                {% if recipe.image %}
-                <img src="{{ site.baseurl }}{{ recipe.image }}" 
-                     alt="{{ recipe.title }}">
-                {% endif %}
-                <div class="card-content">
-                    <div class="date">{{ recipe.date | date: "%d. %B %Y" }}</div>
-                    <h3>{{ recipe.title }}</h3>
-                    {% if recipe.description %}
-                    <p>{{ recipe.description | truncate: 100 }}</p>
+            <a href="{{ site.baseurl }}{{ recipe.url }}" class="block">
+                <div class="card-custom">
+                    {% if recipe.image %}
+                    <img src="{{ site.baseurl }}{{ recipe.image }}" 
+                         alt="{{ recipe.title }}">
                     {% endif %}
-                    <a href="{{ site.baseurl }}{{ recipe.url }}" class="button">Læs mere</a>
+                    <div class="card-content">
+                        <div class="date">{{ recipe.date | date: "%d. %B %Y" }}</div>
+                        <h3>{{ recipe.title }}</h3>
+                        {% if recipe.description %}
+                        <p>{{ recipe.description | truncate: 100 }}</p>
+                        {% endif %}
+                        <span class="button">Læs mere</span>
+                    </div>
                 </div>
-            </div>
+            </a>
             {% endfor %}
         </div>
     </section>
