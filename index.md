@@ -18,7 +18,7 @@ layout: default
         <div id="opskrifter" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for recipe in site.opskrifter %}
                 {% unless recipe.published == false %}
-                <article class="card-custom rounded-lg overflow-hidden shadow-lg">
+                <a href="{{ recipe.url | relative_url }}" class="card-custom rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300">
                     {% if recipe.image %}
                     <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img src="{{ site.baseurl }}{{ recipe.image }}" 
@@ -28,10 +28,11 @@ layout: default
                     {% endif %}
                     <div class="p-6">
                         <h3 class="text-2xl mb-2">{{ recipe.title }}</h3>
+                        <p class="text-sm text-gray-600 mb-2">{{ recipe.date | date: "%d. %B %Y" }}</p>
                         <p class="mb-4 opacity-75">{{ recipe.description }}</p>
-                        <a href="{{ recipe.url | relative_url }}" class="inline-block text-green-600 hover:text-green-800">Læs opskrift →</a>
+                        <span class="inline-block text-green-600">Læs opskrift →</span>
                     </div>
-                </article>
+                </a>
                 {% endunless %}
             {% endfor %}
         </div>
@@ -43,7 +44,7 @@ layout: default
         <div id="blog" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for post in site.blog %}
                 {% unless post.published == false %}
-                <article class="card-custom rounded-lg overflow-hidden shadow-lg">
+                <a href="{{ post.url | relative_url }}" class="card-custom rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300">
                     {% if post.image %}
                     <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                         <img src="{{ site.baseurl }}{{ post.image }}" 
@@ -55,9 +56,9 @@ layout: default
                         <h3 class="text-2xl mb-2">{{ post.title }}</h3>
                         <p class="text-sm text-gray-600 mb-2">{{ post.date | date: "%d. %B %Y" }}</p>
                         <p class="mb-4 opacity-75">{{ post.description }}</p>
-                        <a href="{{ post.url | relative_url }}" class="inline-block text-green-600 hover:text-green-800">Læs mere →</a>
+                        <span class="inline-block text-green-600">Læs mere →</span>
                     </div>
-                </article>
+                </a>
                 {% endunless %}
             {% endfor %}
         </div>

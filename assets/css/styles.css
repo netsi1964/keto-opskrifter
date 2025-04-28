@@ -33,6 +33,7 @@ html {
 /* Header styling */
 .header-custom {
     background-color: var(--color-accent);
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
 }
 
 /* Card styling */
@@ -46,9 +47,11 @@ html {
     cursor: pointer;
 }
 
-/* Remove text decoration from card links */
+/* Make entire card clickable */
 a:has(.card-custom) {
     text-decoration: none;
+    display: block;
+    cursor: pointer;
 }
 
 .card-custom:hover {
@@ -98,12 +101,21 @@ a:has(.card-custom) {
     text-decoration: none;
     font-weight: 400;
     transition: background-color 0.3s ease;
-    pointer-events: none; /* Prevents the button from capturing clicks */
+    pointer-events: none;
 }
 
 .card-custom:hover .button {
     background-color: var(--color-secondary);
     color: white !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-custom {
+        transition: none;
+    }
+    .card-custom:hover {
+        transform: none;
+    }
 }
 
 /* Link styling */

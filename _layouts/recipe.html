@@ -2,93 +2,85 @@
 layout: default
 ---
 
-<article class="container mx-auto px-4 py-8 max-w-4xl" itemscope itemtype="http://schema.org/Recipe" role="main">
+<article class="container mx-auto px-4 py-8 max-w-4xl" role="article">
     <header class="mb-8">
         {% if page.image %}
         <div class="mb-8 rounded-lg overflow-hidden">
             <img src="{{ site.baseurl }}{{ page.image }}" 
                  alt="{{ page.title }}" 
                  class="w-full h-64 object-cover"
-                 itemprop="image"
                  loading="lazy">
         </div>
         {% endif %}
         
-        <h1 class="text-4xl font-bold mb-4" itemprop="name" tabindex="0">{{ page.title }}</h1>
+        <h1 class="text-4xl font-bold mb-4" tabindex="0">{{ page.title }}</h1>
         
         {% if page.description %}
-        <p class="text-xl text-gray-700 mb-6" itemprop="description" tabindex="0">{{ page.description }}</p>
+        <p class="text-xl text-gray-700 mb-6" tabindex="0">{{ page.description }}</p>
         {% endif %}
 
-        <div class="flex flex-wrap gap-6 mb-8 text-gray-600" role="list" aria-label="Opskrift detaljer">
+        <div class="flex flex-wrap gap-4 text-gray-600 mb-6">
             {% if page.prep_time %}
-            <div class="flex items-center" role="listitem">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span itemprop="prepTime">Forberedelse: {{ page.prep_time }}</span>
+                <span>Forberedelse: {{ page.prep_time }}</span>
             </div>
             {% endif %}
-            
+
             {% if page.cook_time %}
-            <div class="flex items-center" role="listitem">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
                 </svg>
-                <span itemprop="cookTime">Tilberedning: {{ page.cook_time }}</span>
+                <span>Tilberedning: {{ page.cook_time }}</span>
             </div>
             {% endif %}
-            
+
             {% if page.servings %}
-            <div class="flex items-center" role="listitem">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                <span itemprop="recipeYield">{{ page.servings }} portioner</span>
+                <span>Portioner: {{ page.servings }}</span>
             </div>
             {% endif %}
-        </div>
 
-        <div class="mb-8">
-            <button onclick="window.print()" 
-                    class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors flex items-center"
-                    aria-label="Print opskrift">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Print opskrift
-            </button>
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d. %B %Y" }}</time>
+            </div>
         </div>
     </header>
 
-    <div class="prose prose-lg max-w-none" itemprop="recipeInstructions">
+    <div class="prose prose-lg max-w-none">
         {{ content }}
     </div>
 
     {% if site.opskrifter.size > 1 %}
-    <section class="mt-16 pt-8 border-t border-gray-200" aria-labelledby="related-recipes-heading">
-        <h2 id="related-recipes-heading" class="text-2xl font-bold mb-6" tabindex="0">Relaterede opskrifter</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list" aria-label="Liste over relaterede opskrifter">
+    <section class="mt-16 pt-8 border-t border-gray-200">
+        <h2 class="text-2xl font-bold mb-6">Relaterede opskrifter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% assign related_recipes = site.opskrifter | where_exp:"item", "item.url != page.url" | sample:3 %}
             {% for recipe in related_recipes %}
-            <a href="{{ site.baseurl }}{{ recipe.url }}" 
-               class="block" 
-               role="listitem"
-               aria-label="Gå til opskrift: {{ recipe.title }}"
-               tabindex="0">
+            <a href="{{ site.baseurl }}{{ recipe.url }}" class="block">
                 <div class="card-custom">
                     {% if recipe.image %}
                     <img src="{{ site.baseurl }}{{ recipe.image }}" 
                          alt="{{ recipe.title }}"
-                         loading="lazy">
+                         loading="lazy"
+                         class="w-full h-48 object-cover">
                     {% endif %}
                     <div class="card-content">
-                        <div class="date" aria-label="Publiceret den">{{ recipe.date | date: "%d. %B %Y" }}</div>
+                        <div class="date">{{ recipe.date | date: "%d. %B %Y" }}</div>
                         <h3>{{ recipe.title }}</h3>
                         {% if recipe.description %}
                         <p>{{ recipe.description | truncate: 100 }}</p>
                         {% endif %}
-                        <span class="button" aria-hidden="true">Læs mere</span>
+                        <span class="button">Læs opskriften</span>
                     </div>
                 </div>
             </a>
@@ -96,4 +88,8 @@ layout: default
         </div>
     </section>
     {% endif %}
+
+    <footer class="mt-8 pt-8 border-t border-gray-200">
+        <a href="{{ site.baseurl }}/" class="text-orange-600 hover:text-orange-800">← Tilbage til forsiden</a>
+    </footer>
 </article> 
