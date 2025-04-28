@@ -1,6 +1,8 @@
 ---
+name: keto-franskbrød.md
 title: Keto Franskbrød med Kerner
 description: Et luftigt og saftigt keto-venligt franskbrød bagt i form, lavet på mandelmel, solsikkekerner, græskarkerner og hørfrø.
+date: 2025-04-27
 image: /assets/images/keto-franskbrød.png
 ---
 

@@ -1,6 +1,8 @@
 ---
+name: keto-rugbrod.md
 title: Keto Rugbrød
 description: Et lækkert og saftigt keto-venligt rugbrød der smager præcis som det ægte rugbrød.
+date: 2025-04-27
 image: /assets/images/keto-rugbrod.jpg
 prep_time: "15 minutter"
 cook_time: "1 time og 20 minutter"
