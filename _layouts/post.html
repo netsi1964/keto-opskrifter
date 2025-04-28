@@ -2,47 +2,48 @@
 layout: default
 ---
 
-<article class="container mx-auto px-4 py-8 max-w-4xl">
+<article class="container mx-auto px-4 py-8 max-w-4xl" role="article">
     <header class="mb-8">
         {% if page.image %}
         <div class="mb-8 rounded-lg overflow-hidden">
             <img src="{{ site.baseurl }}{{ page.image }}" 
                  alt="{{ page.title }}" 
-                 class="w-full h-64 object-cover">
+                 class="w-full h-64 object-cover"
+                 loading="lazy">
         </div>
         {% endif %}
         
-        <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
+        <h1 class="text-4xl font-bold mb-4" tabindex="0">{{ page.title }}</h1>
         
-        <div class="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
-            <div class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="flex flex-wrap items-center gap-4 text-gray-600 mb-6" role="list" aria-label="Artikel metadata">
+            <div class="flex items-center" role="listitem">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d. %B %Y" }}</time>
+                <time datetime="{{ page.date | date_to_xmlschema }}" aria-label="Publiceret den">{{ page.date | date: "%d. %B %Y" }}</time>
             </div>
 
             {% if page.author %}
-            <div class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center" role="listitem">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
-                <span>{{ page.author }}</span>
+                <span aria-label="Forfatter">{{ page.author }}</span>
             </div>
             {% endif %}
 
-            <div class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center" role="listitem">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
                 {% assign words = content | number_of_words %}
                 {% assign read_time = words | divided_by: 200 | plus: 1 %}
-                <span>{{ read_time }} min. læsetid</span>
+                <span aria-label="Estimeret læsetid">{{ read_time }} min. læsetid</span>
             </div>
         </div>
 
         {% if page.description %}
-        <p class="text-xl text-gray-700 mb-6">{{ page.description }}</p>
+        <p class="text-xl text-gray-700 mb-6" tabindex="0">{{ page.description }}</p>
         {% endif %}
     </header>
 
@@ -51,23 +52,29 @@ layout: default
     </div>
 
     {% if site.blog.size > 1 %}
-    <section class="mt-16 pt-8 border-t border-gray-200">
-        <h2 class="text-2xl font-bold mb-6">Relaterede indlæg</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section class="mt-16 pt-8 border-t border-gray-200" aria-labelledby="related-posts-heading">
+        <h2 id="related-posts-heading" class="text-2xl font-bold mb-6" tabindex="0">Relaterede indlæg</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list" aria-label="Liste over relaterede indlæg">
             {% assign related_posts = site.blog | where_exp:"item", "item.url != page.url" | sample:3 %}
             {% for post in related_posts %}
-            <a href="{{ site.baseurl }}{{ post.url }}" class="group">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <a href="{{ site.baseurl }}{{ post.url }}" 
+               class="block" 
+               role="listitem"
+               aria-label="Gå til indlæg: {{ post.title }}"
+               tabindex="0">
+                <div class="card-custom">
                     {% if post.image %}
                     <img src="{{ site.baseurl }}{{ post.image }}" 
-                         alt="{{ post.title }}" 
-                         class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                         alt="{{ post.title }}"
+                         loading="lazy">
                     {% endif %}
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-2 group-hover:text-green-600 transition-colors">{{ post.title }}</h3>
+                    <div class="card-content">
+                        <div class="date" aria-label="Publiceret den">{{ post.date | date: "%d. %B %Y" }}</div>
+                        <h3>{{ post.title }}</h3>
                         {% if post.description %}
-                        <p class="text-gray-600 text-sm">{{ post.description | truncate: 100 }}</p>
+                        <p>{{ post.description | truncate: 100 }}</p>
                         {% endif %}
+                        <span class="button" aria-hidden="true">Læs mere</span>
                     </div>
                 </div>
             </a>
@@ -76,7 +83,9 @@ layout: default
     </section>
     {% endif %}
 
-    <footer class="mt-8 pt-8 border-t border-gray-200">
-        <a href="{{ site.baseurl }}/" class="text-green-600 hover:text-green-800">← Tilbage til forsiden</a>
+    <footer class="mt-8 pt-8 border-t border-gray-200" role="contentinfo">
+        <a href="{{ site.baseurl }}/" 
+           class="text-green-600 hover:text-green-800"
+           aria-label="Gå tilbage til forsiden">← Tilbage til forsiden</a>
     </footer>
 </article> 
