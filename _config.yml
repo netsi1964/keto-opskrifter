@@ -1,28 +1,23 @@
+# Site settings
 title: Keto Opskrifter
-description: Lækre og sunde keto-venlige opskrifter
+description: Din guide til lækre og sunde keto-venlige måltider
 baseurl: "/keto-opskrifter"
 url: "https://netsi1964.github.io"
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+permalink: pretty
 
 # Collections
 collections:
   opskrifter:
     output: true
-    permalink: /opskrifter/:name
+    permalink: /opskrifter/:title/
   blog:
     output: true
-    permalink: /blog/:name
+    permalink: /blog/:title/
 
-# Include assets and images
-include:
-  - assets
-  - assets/images
-
+# Defaults
 defaults:
   - scope:
       path: ""
@@ -39,20 +34,39 @@ defaults:
     values:
       layout: "default"
 
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - tailwind.config.js
+
+# Include in processing
+include:
+  - assets
+  - _pages
+
+# Assets
+sass:
+  style: compressed
+
+# Custom variables
+assets:
+  css:
+    - /assets/css/tailwind.css
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 # Build settings
 encoding: UTF-8
 kramdown:
   input: GFM
   hard_wrap: false
   math_engine: mathjax
-  syntax_highlighter: rouge
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - README.md 
+  syntax_highlighter: rouge 
