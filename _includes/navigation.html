@@ -1,0 +1,53 @@
+<nav class="main-nav">
+  <ul>
+    <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Forside</a></li>
+    <li><a href="{{ '/opskrifter/' | relative_url }}" {% if page.url contains '/opskrifter/' %}class="active"{% endif %}>Opskrifter</a></li>
+    <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active"{% endif %}>Blog</a></li>
+  </ul>
+</nav>
+
+<style>
+.main-nav {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.main-nav ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.main-nav a:hover {
+  background: #f0f0f0;
+}
+
+.main-nav a.active {
+  background: #0066cc;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style> 

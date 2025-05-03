@@ -6,6 +6,7 @@ url: "https://netsi1964.github.io"
 
 # Build settings
 markdown: kramdown
+remote_theme: pages-themes/cayman@v0.2.0
 permalink: pretty
 
 # Collections
@@ -17,6 +18,15 @@ collections:
     output: true
     permalink: /blog/:title/
 
+# Pagination
+paginate: 9
+paginate_path: "/blog/side/:num/"
+
+# Tags
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
 # Defaults
 defaults:
   - scope:
@@ -24,15 +34,13 @@ defaults:
       type: "opskrifter"
     values:
       layout: "recipe"
+      tags: []
   - scope:
       path: ""
       type: "blog"
     values:
       layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+      tags: []
 
 # Exclude from processing
 exclude:
@@ -61,7 +69,10 @@ assets:
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-tagging
 
 # Build settings
 encoding: UTF-8

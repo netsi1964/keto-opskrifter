@@ -21,7 +21,7 @@ layout: default
                 <a href="{{ recipe.url | relative_url }}" class="no-underline bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300 hover:border-primary border-2 border-transparent">
                     {% if recipe.image %}
                     <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-                        <img src="{{ site.baseurl }}{{ recipe.image }}" 
+                        <img src="{{ recipe.image }}" 
                              alt="{{ recipe.title }}" 
                              class="w-full h-48 object-cover">
                     </div>
@@ -47,7 +47,7 @@ layout: default
                 <a href="{{ post.url | relative_url }}" class="no-underline bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300 hover:border-primary border-2 border-transparent">
                     {% if post.image %}
                     <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-                        <img src="{{ site.baseurl }}{{ post.image }}" 
+                        <img src="{{ post.image }}" 
                              alt="{{ post.title }}" 
                              class="w-full h-48 object-cover">
                     </div>

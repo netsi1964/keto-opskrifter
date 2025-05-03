@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    --color-primary: #D35400;    /* Dyb orange */
-    --color-secondary: #E67E22;  /* Lys orange */
-    --color-accent: #8B4513;     /* Saddle brown */
-    --color-background: #FDF5E6; /* Old lace */
-    --color-text: #5D4037;      /* Brun grå */
+    --color-primary: #FF5722;    /* Dyb orange */
+    --color-secondary: #FF7043;  /* Lys orange */
+    --color-accent: #F4511E;     /* Mørk orange */
+    --color-background: #FBE9E7; /* Meget lys orange */
+    --color-text: #424242;      /* Mørk grå */
 }
 
 body {
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     background-color: var(--color-background);
     color: var(--color-text);
 }
@@ -33,18 +33,89 @@ html {
 /* Header styling */
 .header-custom {
     background-color: var(--color-accent);
+    background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
 }
 
 /* Card styling */
 .card-custom {
     background-color: white;
     border: 1px solid var(--color-secondary);
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Make entire card clickable */
+a:has(.card-custom) {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
 }
 
 .card-custom:hover {
     border-color: var(--color-primary);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-custom img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-custom .card-content {
+    padding: 1.5rem;
+}
+
+.card-custom h3 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.card-custom p {
+    color: var(--color-text);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.card-custom .date {
+    color: var(--color-secondary);
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-custom .button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+}
+
+.card-custom:hover .button {
+    background-color: var(--color-secondary);
+    color: white !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-custom {
+        transition: none;
+    }
+    .card-custom:hover {
+        transform: none;
+    }
 }
 
 /* Link styling */
@@ -77,19 +148,19 @@ a:hover {
 .prose {
     max-width: 65ch;
     margin: 0 auto;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .prose h1 {
     font-size: 2.25rem;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--color-primary);
     margin-bottom: 1rem;
 }
 
 .prose h2 {
     font-size: 1.875rem;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--color-accent);
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -97,7 +168,7 @@ a:hover {
 
 .prose h3 {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--color-secondary);
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;

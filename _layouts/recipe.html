@@ -2,11 +2,19 @@
 layout: default
 ---
 
-<article class="container mx-auto px-4 py-8 max-w-4xl" role="article">
+<div class="recipe-detail">
+  <a href="{{ site.baseurl }}/opskrifter" class="back-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="back-icon" width="24" height="24">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    Tilbage til Opskrifter
+  </a>
+
+  <article class="container mx-auto px-4 py-8 max-w-4xl" role="article">
     <header class="mb-8">
         {% if page.image %}
         <div class="mb-8 rounded-lg overflow-hidden">
-            <img src="{{ site.baseurl }}{{ page.image }}" 
+            <img src="{{ page.image }}" 
                  alt="{{ page.title }}" 
                  class="w-full h-64 object-cover"
                  loading="lazy">
@@ -66,17 +74,17 @@ layout: default
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% assign related_recipes = site.opskrifter | where_exp:"item", "item.url != page.url" | sample:3 %}
             {% for recipe in related_recipes %}
-            <a href="{{ site.baseurl }}{{ recipe.url }}" class="block">
+            <a href="{{ recipe.url | remove_first: '/' }}" class="block no-underline hover:no-underline">
                 <div class="card-custom">
                     {% if recipe.image %}
-                    <img src="{{ site.baseurl }}{{ recipe.image }}" 
+                    <img src="{{ recipe.image | relative_url }}" 
                          alt="{{ recipe.title }}"
                          loading="lazy"
                          class="w-full h-48 object-cover">
                     {% endif %}
                     <div class="card-content">
                         <div class="date">{{ recipe.date | date: "%d. %B %Y" }}</div>
-                        <h3>{{ recipe.title }}</h3>
+                        <h3 class="no-underline">{{ recipe.title }}</h3>
                         {% if recipe.description %}
                         <p>{{ recipe.description | truncate: 100 }}</p>
                         {% endif %}
@@ -90,6 +98,39 @@ layout: default
     {% endif %}
 
     <footer class="mt-8 pt-8 border-t border-gray-200">
-        <a href="{{ site.baseurl }}/" class="text-orange-600 hover:text-orange-800">← Tilbage til forsiden</a>
+        <a href="{{ site.baseurl }}/" class="text-orange-600 hover:text-orange-800 no-underline hover:no-underline">← Tilbage til forsiden</a>
     </footer>
-</article> 
+  </article>
+</div>
+
+<style>
+.recipe-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+  transform: translateX(-2px);
+}
+
+.back-icon {
+  width: 20px;
+  height: 20px;
+}
+</style> 

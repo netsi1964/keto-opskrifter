@@ -1,0 +1,365 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-page">
+  <h1>Blog</h1>
+
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Søg i blog indlæg..." onkeyup="filterPosts()">
+    
+    <div class="tag-filters">
+      <button class="reset-filter" onclick="resetFilters()">Nulstil filter</button>
+      {% assign all_tags = site.blog | map: "tags" | compact | uniq | sort %}
+      {% for tag in all_tags %}
+        <button class="tag-filter" onclick="toggleTag('{{ tag }}')">{{ tag }}</button>
+      {% endfor %}
+    </div>
+    
+    <select id="sortSelect" onchange="sortPosts()">
+      <option value="date-desc">Nyeste først</option>
+      <option value="date-asc">Ældste først</option>
+      <option value="title-asc">Titel (A-Å)</option>
+      <option value="title-desc">Titel (Å-A)</option>
+    </select>
+  </div>
+
+  <div class="posts-grid" id="postsGrid">
+    {% for post in site.blog %}
+      <a href="{{ post.url | remove_first: '/' }}" class="post-card-link">
+        <div class="post-card" 
+             data-title="{{ post.title | downcase }}"
+             data-date="{{ post.date | date: '%Y-%m-%d' }}"
+             data-tags="{{ post.tags | join: ',' | default: '' }}">
+          {% if post.image %}
+            <div class="post-image">
+              <img src="{{ post.image | relative_url }}" 
+                   alt="{{ post.image_alt | default: post.title }}"
+                   loading="lazy"
+                   class="w-full h-48 object-cover rounded-t-lg">
+            </div>
+          {% endif %}
+          <div class="post-content">
+            <h2>{{ post.title }}</h2>
+            <div class="meta">
+              <span class="date">{{ post.date | date: "%d-%m-%Y" }}</span>
+            </div>
+            {% if post.description %}
+              <p class="description">{{ post.description }}</p>
+            {% endif %}
+            {% if post.tags.size > 0 %}
+              <div class="tags" onclick="event.stopPropagation();">
+                {% for tag in post.tags %}
+                  <button class="tag" onclick="toggleTag('{{ tag }}', event)">{{ tag }}</button>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Forrige</a>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <span class="current">{{ page }}</span>
+        {% else %}
+          <a href="{% if page == 1 %}{{ '/blog/' | relative_url }}{% else %}{{ site.paginate_path | relative_url | replace: ':num', page }}{% endif %}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Næste &raquo;</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+
+<style>
+.blog-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filters {
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.tag-filters {
+  margin-bottom: 15px;
+}
+
+.tag-filter {
+  background: #f0f0f0;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  margin: 0 5px 5px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: normal;
+}
+
+.tag-filter:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+}
+
+.tag-filter.active {
+  background: #4CAF50;
+  color: white;
+  border-color: #2E7D32;
+  font-weight: 600;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#sortSelect {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.post-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card-link:hover {
+  text-decoration: none;
+}
+
+.post-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.post-card-link:hover .post-card {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.post-card-link:hover .post-image img {
+  transform: scale(1.05);
+}
+
+.post-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.post-card .meta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.post-card .description {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.post-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  background: #f0f0f0;
+  border: 2px solid transparent;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: normal;
+}
+
+.tag:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+}
+
+.tag.active {
+  background: #4CAF50;
+  color: white;
+  border-color: #2E7D32;
+  font-weight: 600;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination a, .pagination span {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pagination a {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.pagination a:hover {
+  background: #e0e0e0;
+}
+
+.pagination .current {
+  background: #0066cc;
+  color: white;
+}
+
+.reset-filter {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  margin: 0 5px 5px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.reset-filter:hover {
+  background: #ff5252;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+</style>
+
+<script>
+let activeFilters = new Set();
+
+function filterPosts() {
+  const searchText = document.getElementById('searchInput').value.toLowerCase();
+  const posts = document.querySelectorAll('.post-card');
+  
+  posts.forEach(post => {
+    const title = post.querySelector('h2').textContent.toLowerCase();
+    const description = post.querySelector('.description')?.textContent.toLowerCase() || '';
+    const tags = post.dataset.tags ? post.dataset.tags.split(',') : [];
+    
+    const matchesSearch = title.includes(searchText) || description.includes(searchText);
+    const matchesTags = activeFilters.size === 0 || 
+                       (tags.length > 0 && [...activeFilters].every(tag => tags.includes(tag)));
+    
+    post.closest('.post-card-link').style.display = matchesSearch && matchesTags ? 'block' : 'none';
+  });
+}
+
+function resetFilters() {
+  activeFilters.clear();
+  document.getElementById('searchInput').value = '';
+  
+  // Remove active class from all tag buttons
+  const allTagButtons = document.querySelectorAll('.tag, .tag-filter');
+  allTagButtons.forEach(button => {
+    button.classList.remove('active');
+  });
+  
+  filterPosts();
+}
+
+function toggleTag(tag, event) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  
+  // Toggle the tag in activeFilters
+  if (activeFilters.has(tag)) {
+    activeFilters.delete(tag);
+  } else {
+    activeFilters.add(tag);
+  }
+  
+  // Update all tag buttons (both filters and post tags)
+  const allTagButtons = document.querySelectorAll(`.tag, .tag-filter`);
+  allTagButtons.forEach(button => {
+    if (button.textContent === tag) {
+      button.classList.toggle('active', activeFilters.has(tag));
+    }
+  });
+  
+  filterPosts();
+}
+
+function sortPosts() {
+  const sortValue = document.getElementById('sortSelect').value;
+  const postsGrid = document.getElementById('postsGrid');
+  const posts = Array.from(postsGrid.children);
+  
+  posts.sort((a, b) => {
+    const cardA = a.querySelector('.post-card');
+    const cardB = b.querySelector('.post-card');
+    
+    if (sortValue === 'title-asc') {
+      return cardA.querySelector('h2').textContent.localeCompare(cardB.querySelector('h2').textContent);
+    } else if (sortValue === 'title-desc') {
+      return cardB.querySelector('h2').textContent.localeCompare(cardA.querySelector('h2').textContent);
+    } else if (sortValue === 'date-desc') {
+      return cardB.dataset.date.localeCompare(cardA.dataset.date);
+    } else if (sortValue === 'date-asc') {
+      return cardA.dataset.date.localeCompare(cardB.dataset.date);
+    }
+  });
+  
+  posts.forEach(post => postsGrid.appendChild(post));
+}
+</script> 

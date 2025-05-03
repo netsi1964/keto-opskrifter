@@ -1,9 +1,12 @@
 ---
-name: keto-franskbrød.md
+layout: recipe
 title: Keto Franskbrød med Kerner
 description: Et luftigt og saftigt keto-venligt franskbrød bagt i form, lavet på mandelmel, solsikkekerner, græskarkerner og hørfrø.
 date: 2025-04-27
-image: /assets/images/keto-franskbrød.png
+tags: [brød, bagt, morgenmad, frokost, grundopskrift, glutenfri, fryseegnet, fiber, nem, æg, nødder, frø, vegetarisk, dansk, hjemmelavet, mandelmel, blød]
+image: assets/images/keto-franskbroed.png
+image_alt: Friskbagt keto-venligt franskbrød med kerner
+image_caption: Luftigt og saftigt keto-venligt franskbrød med kerner
 ---
 
 > Denne opskrift er inspireret af [keto bollerne fra Ketoliv.dk](https://ketoliv.dk/laekre-keto-boller/), tilpasset som franskbrød bagt i form.
@@ -18,27 +21,27 @@ Dette keto-franskbrød er perfekt som erstatning for almindeligt hvedebrød. Det
 
 ### Tørre ingredienser
 
-- 50 g mandelmel
-- 40 g solsikkekerner (blend til mel)
-- 40 g græskarkerner (blend til mel)
-- 20 g hørfrø (blend til mel)
-- 3 spsk. Fiber Husk (psyllium-frøskaller)
-- 2 tsk. bagepulver
-- 1 tsk. salt
+- **50 g** mandelmel
+- **40 g** solsikkekerner (blend til mel)
+- **40 g** græskarkerner (blend til mel)
+- **20 g** hørfrø (blend til mel)
+- **3 spsk** Fiber Husk (psyllium-frøskaller)
+- **2 tsk** bagepulver
+- **1 tsk** salt
 
 ### Våde ingredienser
 
-- 4 æg
-- 200 g creme fraiche (eller græsk yoghurt 10 %)
-- 1 spsk. æblecidereddike
-- 2 dl kogende vand
+- **4** æg
+- **200 g** creme fraiche (eller græsk yoghurt 10 %)
+- **1 spsk** æblecidereddike
+- **2 dl** kogende vand
 
 ## Fremgangsmåde
 
 ### Forberedelser
 
 1. Forvarm ovnen til **180 °C varmluft**.
-2. Beklæd en lille franskbrødsform (ca. 1 liter) med bagepapir.
+2. Beklæd en lille franskbrødsform (ca. **1 liter**) med bagepapir.
 
 ### Tørre ingredienser
 
@@ -84,21 +87,21 @@ Dette keto-franskbrød er perfekt som erstatning for almindeligt hvedebrød. Det
     <tbody class="divide-y divide-gray-200">
       <tr>
         <td class="px-6 py-4 text-sm text-gray-900">Hele franskbrødet</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">30 g</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">175 g</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">78 g</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**30 g**</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**175 g**</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**78 g**</td>
       </tr>
       <tr class="bg-gray-50">
         <td class="px-6 py-4 text-sm text-gray-900">Per skive (ved 14 skiver)</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">2,1 g</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">12,5 g</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">5,6 g</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**2,1 g**</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**12,5 g**</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**5,6 g**</td>
       </tr>
       <tr>
         <td class="px-6 py-4 text-sm font-medium text-gray-900">% andel</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">7 %</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">71 %</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">22 %</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**7 %**</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**71 %**</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**22 %**</td>
       </tr>
     </tbody>
   </table>
@@ -108,4 +111,4 @@ Dette keto-franskbrød er perfekt som erstatning for almindeligt hvedebrød. Det
 
 - Perfekt til morgenmad med smør og ost.
 - Kan fryses i skiver og tøs op direkte i brødristeren.
-- Ønsker du en endnu luftigere brødkrumme, kan du tilsætte 1 tsk. bagepulver ekstra.
+- Ønsker du en endnu luftigere brødkrumme, kan du tilsætte **1 tsk** bagepulver ekstra.

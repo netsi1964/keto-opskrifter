@@ -1,9 +1,12 @@
 ---
-name: keto-pasta.md
+layout: recipe
 title: Keto Pasta (frisk og frysbar)
 description: En velsmagende, lavkulhydrat pasta, som du kan lave selv – perfekt til keto. Kan nydes med det samme eller fryses ned.
 date: 2025-04-27
-image: /assets/images/keto-pasta.png
+tags: [aftensmad, grundopskrift, glutenfri, fryseegnet, italiensk, nem, æg, nødder, fiber, vegetarisk, hjemmelavet, mandelmel, kokosmel, fleksibel]
+image: assets/images/keto-pasta.png
+image_alt: Hjemmelavet keto pasta med cremet sauce
+image_caption: Frisklavet keto pasta, perfekt til dine yndlingssaucer
 ---
 
 > Opskriften er udviklet til at fungere både som frisklavet og som frossen keto-pasta – uden brug af gluten, men stadig med god konsistens.
@@ -18,17 +21,17 @@ Denne keto-pasta er lavet med mandelmel, hørfrømel, kokosmel og psyllium, hvil
 
 ### Tørre ingredienser
 
-- 120 g mandelmel
-- 60 g hørfrømel
-- 30 g kokosmel
-- 1½ spsk psyllium Husk (fiber)
-- ½ tsk salt
+- **120 g** mandelmel
+- **60 g** hørfrømel
+- **30 g** kokosmel
+- **1½ spsk** psyllium Husk (fiber)
+- **½ tsk** salt
 
 ### Våde ingredienser
 
-- 6 store æg
-- 3 spsk olivenolie
-- 1–2 spsk vand (efter behov)
+- **6** store æg
+- **3 spsk** olivenolie
+- **1–2 spsk** vand (efter behov)
 
 ---
 
@@ -43,7 +46,7 @@ Denne keto-pasta er lavet med mandelmel, hørfrømel, kokosmel og psyllium, hvil
 
 ### Hvile og opdeling
 
-1. Del dejen i 3 lige store kugler.
+1. Del dejen i **3** lige store kugler.
 2. Læg kuglerne i plastpose eller dækket skål.
 3. Lad dem hvile i **15–30 minutter** ved stuetemperatur.
 
@@ -51,7 +54,7 @@ Denne keto-pasta er lavet med mandelmel, hørfrømel, kokosmel og psyllium, hvil
 
 1. Rul én dejkugle ud mellem to stykker bagepapir – gerne meget tyndt.
 2. Skær i ønskede pastastrimler (f.eks. tagliatelle).
-3. Kog i **let saltet vand i 2–3 minutter**, til pastaen er mør og stadig har lidt bid.
+3. Kog i let saltet vand i **2–3 minutter**, til pastaen er mør og stadig har lidt bid.
 4. Server straks med din yndlingssauce.
 
 ### Frys de øvrige portioner
@@ -59,15 +62,15 @@ Denne keto-pasta er lavet med mandelmel, hørfrømel, kokosmel og psyllium, hvil
 #### Mulighed A – Frys som dej
 - Pak hver kugle stramt ind i plastfilm.
 - Læg i frysepose og fjern så meget luft som muligt.
-- Opbevar i fryseren i op til 3 måneder.
+- Opbevar i fryseren i op til **3 måneder**.
 - **Optø i køleskab natten over**, rul ud og brug som frisk dej.
 
 #### Mulighed B – Frys som skåret pasta
 1. Rul og skær pasta som normalt.
 2. Fordel strimlerne i ét lag på bagepapir.
-3. Frys i 1–2 timer, til de er stive.
+3. Frys i **1–2 timer**, til de er stive.
 4. Saml dem derefter i en frysepose.
-5. **Kog direkte fra frost** i 3–4 minutter.
+5. **Kog direkte fra frost** i **3–4 minutter**.
 
 ---
 
@@ -84,15 +87,15 @@ Denne keto-pasta er lavet med mandelmel, hørfrømel, kokosmel og psyllium, hvil
     <tbody class="divide-y divide-gray-200">
       <tr>
         <td class="px-6 py-4 text-sm text-gray-900">Kulhydrater</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">4–5 g</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**4–5 g**</td>
       </tr>
       <tr class="bg-gray-50">
         <td class="px-6 py-4 text-sm text-gray-900">Fedt</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">35–40 g</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**35–40 g**</td>
       </tr>
       <tr>
         <td class="px-6 py-4 text-sm text-gray-900">Protein</td>
-        <td class="px-6 py-4 text-sm text-gray-900 text-right">20–22 g</td>
+        <td class="px-6 py-4 text-sm text-gray-900 text-right">**20–22 g**</td>
       </tr>
     </tbody>
   </table>
@@ -103,7 +106,7 @@ Denne keto-pasta er lavet med mandelmel, hørfrømel, kokosmel og psyllium, hvil
 ## Tips
 
 - Du kan tilsætte parmesan eller tørrede krydderurter til dejen for ekstra smag.
-- Lav evt. lasagneplader af dejen og bag dem i ovn i 10–12 min ved 160 °C.
+- Lav evt. lasagneplader af dejen og bag dem i ovn i **10–12 min** ved **160 °C**.
 - Hvis du bruger kokosmel, så husk: det suger væske – brug kun lidt ad gangen og juster med vand.
 
 ---

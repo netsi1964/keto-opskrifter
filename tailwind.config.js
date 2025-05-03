@@ -23,6 +23,18 @@ module.exports = {
       fontWeight: {
         thin: '200',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'none',
+              },
+            },
+          },
+        },
+      },
     },
   },
   plugins: [

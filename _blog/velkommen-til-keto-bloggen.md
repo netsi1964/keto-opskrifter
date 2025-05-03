@@ -3,7 +3,8 @@ name: velkommen-til-keto-bloggen.md
 title: Velkommen til Keto Bloggen
 description: Lær om vores rejse med ketogen kost og få tips til at komme i gang med din egen keto-livsstil.
 date: 2025-04-27
-image: /assets/images/keto-blog-welcome.jpg
+tags: [velkomst, introduktion, keto-basics, livsstil, fællesskab, inspiration, planlægning, motivation, nyheder]
+image: assets/images/keto-blog-welcome.jpg
 published: false
 ---
 

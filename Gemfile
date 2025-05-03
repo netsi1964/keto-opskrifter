@@ -8,4 +8,8 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
-end 
+  gem "jekyll-paginate"
+  gem "jekyll-tagging"
+end
+
+gem 'faraday-retry' 

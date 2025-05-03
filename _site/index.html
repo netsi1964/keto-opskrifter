@@ -1,54 +1,310 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <base href="/keto-opskrifter/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Din guide til lækre og sunde keto-venlige måltider">
     <title>Keto Opskrifter</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/keto-opskrifter/assets/css/styles.css">
-</head>
-<body class="min-h-screen flex flex-col">
-    <!-- Navigation -->
-    <nav class="nav-custom text-white shadow-lg">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <a href="/keto-opskrifter/" class="text-2xl">Keto Opskrifter</a>
-                <div class="space-x-4">
-                    <a href="/keto-opskrifter/" class="hover:text-orange-200">Forside</a>
-                    <a href="/keto-opskrifter/#opskrifter" class="hover:text-orange-200">Opskrifter</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Keto Opskrifter | Din guide til lækre og sunde keto-venlige måltider</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Keto Opskrifter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Din guide til lækre og sunde keto-venlige måltider" />
+<meta property="og:description" content="Din guide til lækre og sunde keto-venlige måltider" />
+<link rel="canonical" href="http://localhost:4000/keto-opskrifter/" />
+<meta property="og:url" content="http://localhost:4000/keto-opskrifter/" />
+<meta property="og:site_name" content="Keto Opskrifter" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Keto Opskrifter" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Din guide til lækre og sunde keto-venlige måltider","headline":"Keto Opskrifter","name":"Keto Opskrifter","url":"http://localhost:4000/keto-opskrifter/"}</script>
+<!-- End Jekyll SEO tag -->
 
-    <!-- Hero section -->
-<header class="header-custom text-white py-16">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                maxWidth: 'none',
+                                h1: {
+                                    fontWeight: '800',
+                                    fontSize: '2.25em',
+                                    marginTop: '0',
+                                    marginBottom: '0.8888889em',
+                                    lineHeight: '1.1111111'
+                                },
+                                h2: {
+                                    fontWeight: '700',
+                                    fontSize: '1.5em',
+                                    marginTop: '2em',
+                                    marginBottom: '1em',
+                                    lineHeight: '1.3333333'
+                                },
+                                h3: {
+                                    fontWeight: '600',
+                                    fontSize: '1.25em',
+                                    marginTop: '1.6em',
+                                    marginBottom: '0.6em',
+                                    lineHeight: '1.6'
+                                },
+                                table: {
+                                    fontSize: '0.875em',
+                                    lineHeight: '1.7142857',
+                                    marginTop: '2em',
+                                    marginBottom: '2em',
+                                    borderWidth: '1px',
+                                    width: '100%'
+                                },
+                                thead: {
+                                    borderBottomWidth: '1px',
+                                    borderBottomColor: 'inherit'
+                                },
+                                'thead th': {
+                                    fontWeight: '600',
+                                    verticalAlign: 'bottom',
+                                    paddingRight: '0.5714286em',
+                                    paddingBottom: '0.5714286em',
+                                    paddingLeft: '0.5714286em'
+                                },
+                                'tbody td': {
+                                    paddingTop: '0.5714286em',
+                                    paddingRight: '0.5714286em',
+                                    paddingBottom: '0.5714286em',
+                                    paddingLeft: '0.5714286em'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+        /* Global styles */
+        .header-custom {
+            background-color: #4a5568;
+            background-image: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        }
+        .card-custom {
+            transition: transform 0.2s ease-in-out;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .card-custom {
+                transition: none;
+            }
+            .card-custom:hover {
+                transform: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/keto-opskrifter/assets/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-white text-gray-900 p-4 z-50">
+        Spring til hovedindhold
+    </a>
+
+    <nav class="main-nav">
+  <ul>
+    <li><a href="/keto-opskrifter/" class="active">Forside</a></li>
+    <li><a href="/keto-opskrifter/opskrifter/" >Opskrifter</a></li>
+    <li><a href="/keto-opskrifter/blog/" >Blog</a></li>
+  </ul>
+</nav>
+
+<style>
+.main-nav {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.main-nav ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.main-nav a:hover {
+  background: #f0f0f0;
+}
+
+.main-nav a.active {
+  background: #0066cc;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style> 
+
+    <main id="main-content" class="prose prose-lg max-w-none" role="main">
+        <!-- Hero section -->
+<header class="bg-accent text-white py-16">
     <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl mb-4">Velkommen til Keto Opskrifter</h1>
-        <p class="text-xl">Din guide til lækre og sunde keto-venlige måltider</p>
+        <h1 class="text-4xl mb-4 font-thin">Velkommen til Keto Opskrifter</h1>
+        <p class="text-xl font-thin text-white opacity-90 drop-shadow">Din guide til lækre og sunde keto-venlige måltider</p>
     </div>
 </header>
 
 <!-- Main content -->
-<main class="container mx-auto px-4 py-8 flex-grow">
-    <section id="opskrifter" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <article class="card-custom rounded-lg overflow-hidden">
-            <div class="p-6">
-                <h2 class="text-2xl mb-2">Keto Rugbrød</h2>
-                <p class="mb-4 opacity-75">Et lækkert og saftigt keto-venligt rugbrød der smager præcis som det ægte rugbrød.</p>
-                <a href="/keto-opskrifter/opskrifter/keto-rugbrod/" class="inline-block">Læs opskrift →</a>
-            </div>
-        </article>
-        
+<main class="container mx-auto px-4 py-8 flex-grow bg-background">
+    <!-- Recipes Section -->
+    <section class="mb-12">
+        <h2 class="text-3xl mb-6 text-center font-thin text-primary">Seneste Opskrifter</h2>
+        <div id="opskrifter" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+                
+                <a href="/keto-opskrifter/opskrifter/keto-franskbroed/" class="no-underline bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300 hover:border-primary border-2 border-transparent">
+                    
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="assets/images/keto-franskbroed.png" alt="Keto Franskbrød med Kerner" class="w-full h-48 object-cover" />
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-2 font-thin text-primary no-underline">Keto Franskbrød med Kerner</h3>
+                        <p class="text-sm text-custom-text mb-2">27. April 2025</p>
+                        <p class="mb-4 text-custom-text opacity-75">Et luftigt og saftigt keto-venligt franskbrød bagt i form, lavet på mandelmel, solsikkekerner, græskarkerner og hørfrø.</p>
+                        <span class="inline-block text-primary hover:text-secondary no-underline">Læs opskrift →</span>
+                    </div>
+                </a>
+                
+            
+                
+                <a href="/keto-opskrifter/opskrifter/keto-pasta/" class="no-underline bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300 hover:border-primary border-2 border-transparent">
+                    
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="assets/images/keto-pasta.png" alt="Keto Pasta (frisk og frysbar)" class="w-full h-48 object-cover" />
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-2 font-thin text-primary no-underline">Keto Pasta (frisk og frysbar)</h3>
+                        <p class="text-sm text-custom-text mb-2">27. April 2025</p>
+                        <p class="mb-4 text-custom-text opacity-75">En velsmagende, lavkulhydrat pasta, som du kan lave selv – perfekt til keto. Kan nydes med det samme eller fryses ned.</p>
+                        <span class="inline-block text-primary hover:text-secondary no-underline">Læs opskrift →</span>
+                    </div>
+                </a>
+                
+            
+                
+                <a href="/keto-opskrifter/opskrifter/keto-rugbrod/" class="no-underline bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300 hover:border-primary border-2 border-transparent">
+                    
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="assets/images/keto-rugbrod.jpg" alt="Keto-venligt Rugbrød" class="w-full h-48 object-cover" />
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-2 font-thin text-primary no-underline">Keto-venligt Rugbrød</h3>
+                        <p class="text-sm text-custom-text mb-2">27. April 2025</p>
+                        <p class="mb-4 text-custom-text opacity-75">Et saftigt og mættende keto-venligt rugbrød med masser af kerner og frø.</p>
+                        <span class="inline-block text-primary hover:text-secondary no-underline">Læs opskrift →</span>
+                    </div>
+                </a>
+                
+            
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section>
+        <h2 class="text-3xl mb-6 text-center font-thin text-primary">Seneste Blog Indlæg</h2>
+        <div id="blog" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+                
+                <a href="/keto-opskrifter/blog/keto-kaffe-med-aeggeskaller/" class="no-underline bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300 hover:border-primary border-2 border-transparent">
+                    
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="assets/images/genbrug-æggeskaller.png" alt="Gør din kaffe blødere med æggeskaller – perfekt til keto!" class="w-full h-48 object-cover" />
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-2 font-thin text-primary no-underline">Gør din kaffe blødere med æggeskaller – perfekt til keto!</h3>
+                        <p class="text-sm text-custom-text mb-2">27. April 2025</p>
+                        <p class="mb-4 text-custom-text opacity-75">Lær hvordan du kan bruge rene æggeskaller til at reducere syrligheden i din kaffe og få en blødere smag – en smart måde at udnytte alle dele af ægget på keto.</p>
+                        <span class="inline-block text-primary hover:text-secondary no-underline">Læs mere →</span>
+                    </div>
+                </a>
+                
+            
+                
+                <a href="/keto-opskrifter/blog/lav-dit-eget-keto-mel/" class="no-underline bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition-shadow duration-300 hover:border-primary border-2 border-transparent">
+                    
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="assets/images/lav-selv-mel.jpeg" alt="Lav dit eget keto-venlige mel" class="w-full h-48 object-cover" />
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-2 font-thin text-primary no-underline">Lav dit eget keto-venlige mel</h3>
+                        <p class="text-sm text-custom-text mb-2">27. April 2025</p>
+                        <p class="mb-4 text-custom-text opacity-75">Lær at lave dine egne sunde melalternativer med kerner og nødder - perfekt til keto og low-carb bagning.</p>
+                        <span class="inline-block text-primary hover:text-secondary no-underline">Læs mere →</span>
+                    </div>
+                </a>
+                
+            
+        </div>
     </section>
 </main>
 
+    </main>
 
     <!-- Footer -->
-    <footer class="footer-custom py-6 mt-auto">
-        <div class="container mx-auto px-4 text-center">
-            <p>Lavet med ♥ af <a href="https://twitter.com/netsi1964" class="text-orange-200 hover:text-white" target="_blank" rel="noopener noreferrer">Sten Hougaard</a></p>
+    <footer class="bg-gray-800 text-white py-8 mt-auto" role="contentinfo">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 space-y-2">
+                    <p>&copy; 2025 Sten Hougaard. Indhold må deles med kildeangivelse.</p>
+                    <p class="text-sm text-gray-400">Indhold og billeder på dette website kan være genereret med kunstig intelligens.</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <nav class="flex space-x-4" role="navigation" aria-label="Footer navigation">
+                        <a href="." class="hover:text-gray-300">Hjem</a>
+                        <a href="opskrifter" class="hover:text-gray-300">Opskrifter</a>
+                        <a href="blog" class="hover:text-gray-300">Blog</a>
+                    </nav>
+                    <a href="https://x.com/netsi1964" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="flex items-center hover:text-gray-300"
+                       aria-label="Følg mig på X (tidligere Twitter)">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        <span>@netsi1964</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
