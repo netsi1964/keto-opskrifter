@@ -7,6 +7,7 @@ tags: [aftensmad, grundopskrift, glutenfri, fryseegnet, italiensk, nem, æg, nø
 image: assets/images/keto-pasta.png
 image_alt: Hjemmelavet keto pasta med cremet sauce
 image_caption: Frisklavet keto pasta, perfekt til dine yndlingssaucer
+published:false
 ---
 
 > Opskriften er udviklet til at fungere både som frisklavet og som frossen keto-pasta – uden brug af gluten, men stadig med god konsistens.
