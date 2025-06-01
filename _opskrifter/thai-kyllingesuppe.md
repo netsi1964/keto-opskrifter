@@ -2,7 +2,7 @@
 layout: recipe
 title: Thai Kyllingesuppe med Kokosmælk
 description: En cremet og smagfuld thailandsk kyllingesuppe med kokosmælk, fyldt med friske ingredienser. Perfekt til en kold dag!
-date: 2025-04-28
+date: 2025-06-01
 tags: [suppe, kylling, thailandsk, asiatisk, kokosmælk, nem, aftensmad, frokost, glutenfri, keto-venlig, low-carb]
 image: assets/images/thai-kyllingesuppe.jpg
 image_alt: Thai Kyllingesuppe med Kokosmælk
