@@ -3,7 +3,7 @@ title: Donutfersken med vaniljeflødeskum
 description: En lækker og blodsukkervenlig dessert med flødeskum og donutfersken – sødet med Hermesetas og smagt til med lime og vanilje.
 date: 2025-06-17
 tags: [dessert, keto, lavkarbo, flødeskum, donutfersken, diabetesvenlig, hermesetas]
-image: assets/images/donutfersken-floedeskum.jpg
+image: assets/images/donutfersken-floedeskum.jpg.png
 image_alt: Skiver af donutfersken med flødeskum og Hermesetas og lime
 image_caption: En let og lækker dessert – uden sukker, men med masser af smag!
 ---
