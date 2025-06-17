@@ -1,6 +1,6 @@
 ---
 name: keto-venlig-frugt.md
-title: Frugt på keto: Din guide til at vælge de bær og frugter med lavest kulhydrat
+title: Frugt på keto - Din guide til at vælge de bær og frugter med lavest kulhydrat
 description: Er frugt okay på keto? Lær hvilke frugter der har et lavt kulhydratindhold, og hvilke du skal undgå, så du kan vælge rigtigt og holde dig i ketose.
 date: 2025-06-17
 tags: [keto, frugt, low-carb, kulhydrater, guide, oversigt, bær, dessert]
