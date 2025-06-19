@@ -3,7 +3,7 @@ title: Thai-inspireret kylling med broccoli og spinatsalat
 description: En lækker og nem thai-inspireret ret, hvor du laver én hovedret og justerer tilbehør til både keto og ikke-keto. Perfekt til familie med forskellige behov.
 date: 2025-06-19
 tags: [keto, kylling, asiatisk, nem, aftensmad, low-carb, spinat, broccoli, familievenlig]
-image: assets/images/thai-kylling-broccoli-salat.jpg
+image: assets/images/A0224DDE-E363-4076-A771-E6907E846258.png
 image_alt: Thai-inspireret kylling med broccoli og spinatsalat
 image_caption: Keto-venlig hovedret der også passer til resten af familien
 ---
