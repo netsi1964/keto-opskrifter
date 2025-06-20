@@ -14,6 +14,13 @@ Ja, frugt er propfyldt med vitaminer, mineraler og fibre – elementer der er go
 
 For at gøre det nemmere for dig at navigere i frugtdjunglen, har jeg samlet en oversigt. Nedenfor finder du ca. tal for kulhydrat, fedt og protein pr. 100g for forskellige frugter. Der er også en "keto-score" (0-10), der giver et hurtigt praj om, hvor velegnet frugten er til keto. Vælg dem med den højeste score, især hvis du skal bruge frugt til en dessert.
 
+<p class="codepen" data-height="800" data-theme-id="21870" data-default-tab="" data-slug-hash="qEdMGgP" data-pen-title="Keto-Friendly Fruits" data-user="netsi1964" style="height: 800px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/netsi1964/pen/qEdMGgP">
+  Keto-Friendly Fruits</a> by Sten Hougaard (<a href="https://codepen.io/netsi1964">@netsi1964</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+
 ---
 
 | Frugt    | Kulhydrat (g) | Fedt (g) | Protein (g) | Keto-score (0-10) | Bemærkning                       |
