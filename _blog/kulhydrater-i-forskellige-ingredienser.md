@@ -33,8 +33,8 @@ Alle mængder svarer til hvor meget du kan spise af ingrediensen, før du har f�
     tbody tr.great { background: #d2e6d2; }        /* Sandet grøn */
     tbody tr.acceptable { background: #f7f6d1; }   /* Sandet gul */
     tbody tr.dont { background: #f5dad9; color: #991f23; }   /* Sandet rød, mørk tekst */
-    thead th { vertical-align: bottom; border-right: 1px solid black;}
-    tbody td { border-right: 1px solid black;}
+    thead th { vertical-align: bottom; border-right: 1px solid black; padding: 0 4px;}
+    tbody td { border-right: 1px solid black; padding: 0 4px;}
 </style>
 <table>
   <thead>
