@@ -9,7 +9,8 @@ image_alt: Fundamentet skal være på plads, undgå det i toppen
 image_caption: Keto pyramiden - spis mest fra fundamentet
 ---
 
-# Hvor mange kulhydrater får du – og hvor meget må du spise?
+![Keto pyramiden](assets/images/keto-pyramiden.png)
+## Hvor mange kulhydrater får du – og hvor meget må du spise?
 
 Når du spiser keto eller meget low-carb, gælder det om at holde styr på de skjulte **kulhydrater**.
 
