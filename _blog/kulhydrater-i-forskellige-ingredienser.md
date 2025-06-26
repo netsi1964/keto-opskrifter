@@ -1,10 +1,10 @@
 ---
 name: kulhydrater-i-forskellige-ingredienser.md
 title: Kulhydrater i forskellige ingredienser – hvad kan du spise på keto?
-description: Få det store overblik: Hvilke grøntsager, frugter og andre ingredienser kan du bruge på keto? Brug denne guide til hurtigt at vurdere hvor meget du kan spise, uden at ryge ud af ketose.
+description: "Få det store overblik: Hvilke grøntsager, frugter og andre ingredienser kan du bruge på keto? Brug denne guide til hurtigt at vurdere hvor meget du kan spise, uden at ryge ud af ketose."
 date: 2025-06-26
 tags: [keto, low-carb, kulhydrater, grøntsager, frugt, mejeri, sammenligning, oversigt]
-image: assets/images/keto-pyramide.png
+image: assets/images/keto-pyramiden.png
 image_alt: Fundamentet skal være på plads, undgå det i toppen
 image_caption: Keto pyramiden - spis mest fra fundamentet
 ---
