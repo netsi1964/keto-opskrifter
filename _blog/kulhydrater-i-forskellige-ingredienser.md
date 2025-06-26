@@ -5,7 +5,8 @@ description: Få det store overblik: Hvilke grøntsager, frugter og andre ingred
 date: 2025-06-26
 tags: [keto, low-carb, kulhydrater, grøntsager, frugt, mejeri, sammenligning, oversigt]
 image: assets/images/keto-pyramide.png
-published: true
+image_alt: Fundamentet skal være på plads, undgå det i toppen
+image_caption: Keto pyramiden - spis mest fra fundamentet
 ---
 
 # Hvor mange kulhydrater får du – og hvor meget må du spise?
@@ -14,7 +15,7 @@ Når du spiser keto eller meget low-carb, gælder det om at holde styr på de sk
 
 Mange tror måske, at alt grønt er "gratis", men både frugt, rodfrugter og selv visse mejeriprodukter kan hurtigt fylde på dagskontoen.
 
-![Oversigt over hvor mange gram du skal spise for at få 4g sukker](/assets/images/4gkulhydrater.png)
+![Oversigt over hvor mange gram du skal spise for at få 4g sukker](assets/images/4gkulhydrater.png)
 
 **Sådan læser du tabellen:**  
 Alle mængder svarer til hvor meget du kan spise af ingrediensen, før du har fået 4 gram kulhydrat – altså ca. 1 teskefuld sukker.
