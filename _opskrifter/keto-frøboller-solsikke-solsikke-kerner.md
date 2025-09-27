@@ -4,7 +4,7 @@ title: Keto Frøboller af Solsikke og Græskar
 description: Lækre og mættende keto-frøboller lavet af solsikke- og græskarkerner – perfekte til morgenmad, frokost eller madpakken.
 date: 2025-09-27
 tags: [brød, bagt, morgenmad, frokost, grundopskrift, glutenfri, madpakke, fryseegnet, nem, æg, frø, vegetarisk, dansk, hjemmelavet, fiber, mættende]
-image: assets/images/keto-froeboller.jpg
+image: assets/images/69B69550-8FD7-4F43-ABE0-98317CFA6A87.png
 image_alt: Keto frøboller på bageplade
 image_caption: Lune keto frøboller bagt med solsikke- og græskarkerner
 ---
