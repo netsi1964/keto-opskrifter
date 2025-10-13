@@ -31,7 +31,7 @@ Den er nem at bage, og resultatet bliver en sprød og gylden topping over et saf
 
 ### Crumble
 
-- 60 g mandelmel (ikke fedtreduceret)  
+- 60 g mandelmel (ikke fedtreduceret)  ([* - tip til at lave mel selv](https://netsi1964.github.io/keto-opskrifter/blog/lav-dit-eget-keto-mel/))
 - 40 g hakkede nødder (fx mandler, valnødder eller pecan)  
 - 50 g smør (koldt, i tern)  
 - 1 spsk Sukrin Gold eller erythritol  
