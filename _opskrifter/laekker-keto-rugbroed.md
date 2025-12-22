@@ -2,7 +2,7 @@
 layout: recipe
 title: Lækker keto rugbrød
 description: Et saftigt, mættende og blodsukkervenligt keto-rugbrød med kerner og frø – velegnet til type 2 diabetes.
-date: 2025-14-22
+date: 2025-12-22
 tags: [brød, bagt, morgenmad, frokost, grundopskrift, glutenfri, madpakke, fryseegnet, nem, æg, frø, vegetarisk, dansk, hjemmelavet, fiber, mættende, keto, diabetesvenlig]
 image: assets/images/laekker-keto-rugbrod.jpg
 image_alt: Lækker keto rugbrød
