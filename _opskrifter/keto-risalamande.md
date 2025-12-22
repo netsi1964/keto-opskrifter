@@ -2,8 +2,8 @@
 layout: recipe
 title: Keto risalamande
 description: En klassisk, cremet og blodsukkervenlig keto-risalamande uden sukker og ris – perfekt som dessert eller juleklassiker.
-date: 2025-14-22
-tags: [dessert, keto, risalamande, jul, sukkerfri, glutenfri, diabetesvenlig, nem, fløde, mandler, vanilje, klassisk, dansk]
+date: 2025-12-22
+tags: [jul, dessert, keto, risalamande, jul, sukkerfri, glutenfri, diabetesvenlig, nem, fløde, mandler, vanilje, klassisk, dansk]
 image: assets/images/keto-risalamande.jpg
 image_alt: Keto risalamande
 image_caption: Cremet og klassisk keto risalamande
