@@ -13,12 +13,15 @@ layout: default
   <article class="container mx-auto px-4 py-8 max-w-4xl" role="article">
     <header class="mb-8">
         {% if page.image %}
-        <div class="mb-8 rounded-lg overflow-hidden">
-            <img src="{{ page.image }}" 
-                 alt="{{ page.title }}" 
-                 class="w-full h-64 object-cover"
+        <figure class="mb-8">
+            <img src="{{ page.image | relative_url }}"
+                 alt="{{ page.image_alt | default: page.title }}"
+                 class="w-full h-64 object-cover rounded-lg"
                  loading="lazy">
-        </div>
+            {% if page.image_caption %}
+            <figcaption class="mt-2 text-sm text-gray-600">{{ page.image_caption }}</figcaption>
+            {% endif %}
+        </figure>
         {% endif %}
         
         <h1 class="text-4xl font-bold mb-4" tabindex="0">{{ page.title }}</h1>
@@ -133,4 +136,4 @@ layout: default
   width: 20px;
   height: 20px;
 }
-</style> 
+</style>
